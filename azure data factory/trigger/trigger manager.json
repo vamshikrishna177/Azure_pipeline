@@ -1,0 +1,24 @@
+{
+	"name": "trigger manager",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "parent pipeline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/source/blobs/Dimensions/fact_who_alcohol_total_per_capita_2000_2022_clean_2.csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/b5bfe5c3-3ff3-40bd-a564-a4a244d9363f/resourceGroups/Vamshi177/providers/Microsoft.Storage/storageAccounts/storagevamshi177",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
