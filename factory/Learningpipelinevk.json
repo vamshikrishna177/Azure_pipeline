@@ -1,9 +1,0 @@
-{
-	"name": "Learningpipelinevk",
-	"location": "southindia",
-	"identity": {
-		"type": "SystemAssigned",
-		"principalId": "7bef81f4-f382-4fda-b62d-d170dfa6589e",
-		"tenantId": "7d2d9779-5bfd-47ef-860c-e6fa57eb75d6"
-	}
-}
