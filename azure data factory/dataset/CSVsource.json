@@ -1,0 +1,25 @@
+{
+	"name": "CSVsource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkedserviceDL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "fact_who_alcohol_total_per_capita_2000_2022_clean_2.csv",
+				"folderPath": "Dimensions",
+				"fileSystem": "source"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
